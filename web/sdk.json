@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "peritaje-vivienda",
+  "private_key_id": "65f228fc5f8bc237babe33a136d2eee7fc6b939e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCsGVYB3BOUbe1+\nchH8zpj3nQZCfI49sTMlsfhQQOCIjD5LxW0RvgFZeo6nzkIPy8hsw/ZivRmGp0Q9\nPBkywt/i7MbWZSbozLFGEy3Fzye8ESXqVt9HJ1VI+rb3BJRDbA+bq/ST8GNMnZsk\nLhOkZineJohcVbZuf26lVvkepug1E73phmW0gXW/vhWCxzAYKQWMX/GyFjcoMwWR\nJvabS6TgO8Qt9NMX4Nrve28BLDgnF1WeggEd1WD89IiVaPsKBx4XWfuHH0me8mM7\nVnNUM4eTAC6jc1IYdyenAy4Wo/rDakWphOPvK+qHCBH5xONyn0KhvNgUKG4aeuxZ\n9A9h1zo9AgMBAAECggEAPbue3u7nNRyTjwJzEli3hUbVyn6sdVO9cZ2b4YnMIR8R\nb5OjkrQx/rtYNbhmeQ0T2XQXywZjBCq27zJCJbPCpL9jed9x7BsU0fqqNiUfbzZF\ngABmejsRPCr2+7ewSVkXZjNx+alGrWJxlrJSiGu/Q/lVe62hUZSzh2qh1Q1xCSxz\nHxvYXLizLpNUMr0q68sOHKV7mer6FUViTK80x+9vzDAO1nvewM+xwxZt0I+uT1JR\ndXnhsBRMG28pdozkWoFrF5yYqa3ipA6my5TaD0V0S5ZkDfolTOOqhq4bgX575JEa\nGwzuaHG10wOLNhGrLpyk2qyHq3+piASyEktZv2Y37wKBgQDj+ZdZH7L0S+62trLU\nN5+Cc3stf4dsslFT4bQ7cq83MZMJG3Yr4gI//eyHZ7ZJdg8bgpPtK0wSngAP6IHE\n05BrueS1xyAMJz1e/haOlwes5EYAcWak6M4ifoDvtOHHrlX8Kdc0XEpsT3XXP031\nWKo61PViQ1KIQ6vHfm5byxxafwKBgQDBQVFy1w8MwtNPM9JOSYZZhKxVWNsd2dac\n8fkgXaLOqLAMX8bKDMtUaHdKnpFnK2G4g2Zm0XscAlMOB80HUUVl6ewIRPFx4Vg8\n9KK3Pvh+CcNQumWhmshJC9GGIgKx5GAOPEbBze8sSUCFjjn/5cPLDGMTTrNEr6y0\nUtz0YTD1QwKBgQCaLVg//AIo2ZmNlC2I/D0yGit577+EsWvzELe1ZLA+4ZYRGLNo\npibjZDUsteU/9UnuTvb/9MIz7QsZtyLcHECVuliE3zA7R+ZnceuLb3TPZmo5Lng+\nmvudtHQ6qNfxFWQtb5aNYMUsTujhM3zjqp0lwJRbajBM24c3GbhE+C4qvQKBgFKT\nOV0rnWeje6z1BKCk8/4eHZDeRcosgXJQRlXZDK7nD0pKRmOhMeRgOtCsjo6Zz8iK\nhN/cFJF0QM7W8Hl29YNFf7BM3Sn+0rhBA6HvCzi3rTg6XSC/RWNI5H8+2w3t+kk6\n4jT/bHns1t/6VLgOEioZod/nGdx4gAARBA571PKHAoGBANRIRaSgRrwqBy4E02mA\nomFxQLifOAsFW/NPRlY1GTAWKh1uGtmzpI380PMUiPKCjYIHCfCOXEdGq5v+dCvl\nuBiS4JKs6lt01lua3y3kUsYpfSm2Y5lTHCEg18PWmzhQ+YrYEDmYAWNOcX43uYHN\nOB5ljMbirBqdtePOwSOcy/Op\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-23obk@peritaje-vivienda.iam.gserviceaccount.com",
+  "client_id": "100159175745784312888",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-23obk%40peritaje-vivienda.iam.gserviceaccount.com"
+}

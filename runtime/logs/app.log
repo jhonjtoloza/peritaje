@@ -1,0 +1,916 @@
+2018-05-28 23:55:17 [::1][100][dk26ap8e6damgck700f7mnnnv7][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:dbname=pe...', 'root', 'jhonjtoloza', NULL)
+#1 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#6 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/jhon/Documentos/html/peritaje/controllers/PeritajesController.php(159): yii\db\Command->queryAll()
+#8 [internal function]: app\controllers\PeritajesController->actionVer('LBVTKGF')
+#9 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('ver', Array)
+#12 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('peritajes/ver', Array)
+#13 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /home/jhon/Documentos/html/peritaje/web/index.php(28): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Connection refused in /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/jhon/Documentos/html/peritaje/controllers/PeritajesController.php(159): yii\db\Command->queryAll()
+#6 [internal function]: app\controllers\PeritajesController->actionVer('LBVTKGF')
+#7 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('ver', Array)
+#10 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('peritajes/ver', Array)
+#11 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/jhon/Documentos/html/peritaje/web/index.php(28): yii\base\Application->run()
+#13 {main}
+Additional Information:
+
+2018-05-28 23:55:14 [::1][100][dk26ap8e6damgck700f7mnnnv7][info][application] $_GET = [
+    'id' => 'LBVTKGF'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_pk_id_1_1fff' => '234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.'
+    '_ga' => 'GA1.1.1990013592.1524635642'
+    'Phpstorm-588f093b' => '1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda'
+    '_identity' => '8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0FDSsKi-evb-1o1RHPDmKsCsymU148aJ\";}'
+    'PHPSESSID' => 'dk26ap8e6damgck700f7mnnnv7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/peritaje/web/peritajes/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9,en;q=0.8,gl;q=0.7,it;q=0.6'
+    'HTTP_COOKIE' => '_pk_id.1.1fff=234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.; _ga=GA1.1.1990013592.1524635642; Phpstorm-588f093b=1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda; _identity=8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220FDSsKi-evb-1o1RHPDmKsCsymU148aJ%22%3B%7D; PHPSESSID=dk26ap8e6damgck700f7mnnnv7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/peritaje/web/index.php'
+    'REMOTE_PORT' => '32962'
+    'REDIRECT_URL' => '/peritaje/web/peritajes/ver'
+    'REDIRECT_QUERY_STRING' => 'id=LBVTKGF'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=LBVTKGF'
+    'REQUEST_URI' => '/peritaje/web/peritajes/ver?id=LBVTKGF'
+    'SCRIPT_NAME' => '/peritaje/web/index.php'
+    'PHP_SELF' => '/peritaje/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527551714.751
+    'REQUEST_TIME' => 1527551714
+]
+2018-05-28 23:55:19 [::1][100][dk26ap8e6damgck700f7mnnnv7][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:dbname=pe...', 'root', 'jhonjtoloza', NULL)
+#1 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#6 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/jhon/Documentos/html/peritaje/controllers/PeritajesController.php(159): yii\db\Command->queryAll()
+#8 [internal function]: app\controllers\PeritajesController->actionVer('LBVTKGF')
+#9 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('ver', Array)
+#12 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('peritajes/ver', Array)
+#13 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /home/jhon/Documentos/html/peritaje/web/index.php(28): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Connection refused in /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/jhon/Documentos/html/peritaje/controllers/PeritajesController.php(159): yii\db\Command->queryAll()
+#6 [internal function]: app\controllers\PeritajesController->actionVer('LBVTKGF')
+#7 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('ver', Array)
+#10 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('peritajes/ver', Array)
+#11 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/jhon/Documentos/html/peritaje/web/index.php(28): yii\base\Application->run()
+#13 {main}
+Additional Information:
+
+2018-05-28 23:55:17 [::1][100][dk26ap8e6damgck700f7mnnnv7][info][application] $_GET = [
+    'id' => 'LBVTKGF'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_pk_id_1_1fff' => '234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.'
+    '_ga' => 'GA1.1.1990013592.1524635642'
+    'Phpstorm-588f093b' => '1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda'
+    '_identity' => '8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0FDSsKi-evb-1o1RHPDmKsCsymU148aJ\";}'
+    'PHPSESSID' => 'dk26ap8e6damgck700f7mnnnv7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/peritaje/web/peritajes/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9,en;q=0.8,gl;q=0.7,it;q=0.6'
+    'HTTP_COOKIE' => '_pk_id.1.1fff=234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.; _ga=GA1.1.1990013592.1524635642; Phpstorm-588f093b=1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda; _identity=8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220FDSsKi-evb-1o1RHPDmKsCsymU148aJ%22%3B%7D; PHPSESSID=dk26ap8e6damgck700f7mnnnv7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/peritaje/web/index.php'
+    'REMOTE_PORT' => '32968'
+    'REDIRECT_URL' => '/peritaje/web/peritajes/ver'
+    'REDIRECT_QUERY_STRING' => 'id=LBVTKGF'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=LBVTKGF'
+    'REQUEST_URI' => '/peritaje/web/peritajes/ver?id=LBVTKGF'
+    'SCRIPT_NAME' => '/peritaje/web/index.php'
+    'PHP_SELF' => '/peritaje/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527551717.477
+    'REQUEST_TIME' => 1527551717
+]
+2018-05-29 18:19:09 [::1][100][c3db4pl0ah08e6b303i7t8uea5][error][Google\Cloud\Core\Exception\ServiceException] Google\Cloud\Core\Exception\ServiceException: {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "forbidden",
+    "message": "firebase-adminsdk-23obk@peritaje-vivienda.iam.gserviceaccount.com does not have storage.objects.create access to peritaje-204822.appspot.com."
+   }
+  ],
+  "code": 403,
+  "message": "firebase-adminsdk-23obk@peritaje-vivienda.iam.gserviceaccount.com does not have storage.objects.create access to peritaje-204822.appspot.com."
+ }
+}
+ in /home/jhon/Documentos/html/peritaje/vendor/google/cloud-core/src/RequestWrapper.php:263
+Stack trace:
+#0 /home/jhon/Documentos/html/peritaje/vendor/google/cloud-core/src/RequestWrapper.php(168): Google\Cloud\Core\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\Exception\ClientException))
+#1 /home/jhon/Documentos/html/peritaje/vendor/google/cloud-core/src/Upload/ResumableUploader.php(219): Google\Cloud\Core\RequestWrapper->send(Object(GuzzleHttp\Psr7\Request), Array)
+#2 /home/jhon/Documentos/html/peritaje/vendor/google/cloud-core/src/Upload/ResumableUploader.php(99): Google\Cloud\Core\Upload\ResumableUploader->createResumeUri()
+#3 /home/jhon/Documentos/html/peritaje/vendor/google/cloud-storage/WriteStream.php(86): Google\Cloud\Core\Upload\ResumableUploader->getResumeUri()
+#4 /home/jhon/Documentos/html/peritaje/vendor/google/cloud-storage/StreamWrapper.php(217): Google\Cloud\Storage\WriteStream->write('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#5 [internal function]: Google\Cloud\Storage\StreamWrapper->stream_write('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#6 /home/jhon/Documentos/html/peritaje/controllers/PeritajesController.php(303): copy('/home/jhon/Docu...', 'gs://peritaje-2...')
+#7 [internal function]: app\controllers\PeritajesController->actionLogo()
+#8 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('logo', Array)
+#11 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('peritajes/logo', Array)
+#12 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /home/jhon/Documentos/html/peritaje/web/index.php(28): yii\base\Application->run()
+#14 {main}
+2018-05-29 18:19:08 [::1][100][c3db4pl0ah08e6b303i7t8uea5][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => 'K0Cvm8vze0gHDqIjztHcu4Cnokl5C3sfn2sTBu1T8mQbBuvIuLgSZWJ4wA7_vu3pyPfmJDJ4OGzmBkY32WuTLg=='
+    'FileUpload' => [
+        'picture' => ''
+    ]
+]
+
+$_FILES = [
+    'FileUpload' => [
+        'name' => [
+            'picture' => 'Captura de pantalla de 2018-05-29 12-32-43.png'
+        ]
+        'type' => [
+            'picture' => 'image/png'
+        ]
+        'tmp_name' => [
+            'picture' => '/tmp/php8ctkMr'
+        ]
+        'error' => [
+            'picture' => 0
+        ]
+        'size' => [
+            'picture' => 95431
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_pk_id_1_1fff' => '234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.'
+    '_ga' => 'GA1.1.1990013592.1524635642'
+    'Phpstorm-588f093b' => '1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda'
+    '_identity' => '8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0FDSsKi-evb-1o1RHPDmKsCsymU148aJ\";}'
+    'PHPSESSID' => 'c3db4pl0ah08e6b303i7t8uea5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '95951'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary2om4B4jrTrtmtGB4'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/peritaje/web/peritajes/logo'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9,en;q=0.8,gl;q=0.7,it;q=0.6'
+    'HTTP_COOKIE' => '_pk_id.1.1fff=234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.; _ga=GA1.1.1990013592.1524635642; Phpstorm-588f093b=1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda; _identity=8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220FDSsKi-evb-1o1RHPDmKsCsymU148aJ%22%3B%7D; PHPSESSID=c3db4pl0ah08e6b303i7t8uea5'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/peritaje/web/index.php'
+    'REMOTE_PORT' => '35398'
+    'REDIRECT_URL' => '/peritaje/web/peritajes/logo'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/peritaje/web/peritajes/logo'
+    'SCRIPT_NAME' => '/peritaje/web/index.php'
+    'PHP_SELF' => '/peritaje/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527617948.166
+    'REQUEST_TIME' => 1527617948
+]
+2018-05-29 18:19:49 [::1][100][c3db4pl0ah08e6b303i7t8uea5][error][Google\Cloud\Core\Exception\ServiceException] Google\Cloud\Core\Exception\ServiceException: {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "forbidden",
+    "message": "firebase-adminsdk-23obk@peritaje-vivienda.iam.gserviceaccount.com does not have storage.objects.create access to peritaje-204822.appspot.com."
+   }
+  ],
+  "code": 403,
+  "message": "firebase-adminsdk-23obk@peritaje-vivienda.iam.gserviceaccount.com does not have storage.objects.create access to peritaje-204822.appspot.com."
+ }
+}
+ in /home/jhon/Documentos/html/peritaje/vendor/google/cloud-core/src/RequestWrapper.php:263
+Stack trace:
+#0 /home/jhon/Documentos/html/peritaje/vendor/google/cloud-core/src/RequestWrapper.php(168): Google\Cloud\Core\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\Exception\ClientException))
+#1 /home/jhon/Documentos/html/peritaje/vendor/google/cloud-core/src/Upload/ResumableUploader.php(219): Google\Cloud\Core\RequestWrapper->send(Object(GuzzleHttp\Psr7\Request), Array)
+#2 /home/jhon/Documentos/html/peritaje/vendor/google/cloud-core/src/Upload/ResumableUploader.php(99): Google\Cloud\Core\Upload\ResumableUploader->createResumeUri()
+#3 /home/jhon/Documentos/html/peritaje/vendor/google/cloud-storage/WriteStream.php(86): Google\Cloud\Core\Upload\ResumableUploader->getResumeUri()
+#4 /home/jhon/Documentos/html/peritaje/vendor/google/cloud-storage/StreamWrapper.php(217): Google\Cloud\Storage\WriteStream->write('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#5 [internal function]: Google\Cloud\Storage\StreamWrapper->stream_write('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#6 /home/jhon/Documentos/html/peritaje/controllers/PeritajesController.php(303): copy('/home/jhon/Docu...', 'gs://peritaje-2...')
+#7 [internal function]: app\controllers\PeritajesController->actionLogo()
+#8 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('logo', Array)
+#11 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('peritajes/logo', Array)
+#12 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /home/jhon/Documentos/html/peritaje/web/index.php(28): yii\base\Application->run()
+#14 {main}
+2018-05-29 18:19:48 [::1][100][c3db4pl0ah08e6b303i7t8uea5][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => 'K0Cvm8vze0gHDqIjztHcu4Cnokl5C3sfn2sTBu1T8mQbBuvIuLgSZWJ4wA7_vu3pyPfmJDJ4OGzmBkY32WuTLg=='
+    'FileUpload' => [
+        'picture' => ''
+    ]
+]
+
+$_FILES = [
+    'FileUpload' => [
+        'name' => [
+            'picture' => 'Captura de pantalla de 2018-05-29 12-32-43.png'
+        ]
+        'type' => [
+            'picture' => 'image/png'
+        ]
+        'tmp_name' => [
+            'picture' => '/tmp/phpM7MHMg'
+        ]
+        'error' => [
+            'picture' => 0
+        ]
+        'size' => [
+            'picture' => 95431
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_pk_id_1_1fff' => '234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.'
+    '_ga' => 'GA1.1.1990013592.1524635642'
+    'Phpstorm-588f093b' => '1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda'
+    '_identity' => '8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0FDSsKi-evb-1o1RHPDmKsCsymU148aJ\";}'
+    'PHPSESSID' => 'c3db4pl0ah08e6b303i7t8uea5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '95951'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary2om4B4jrTrtmtGB4'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/peritaje/web/peritajes/logo'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9,en;q=0.8,gl;q=0.7,it;q=0.6'
+    'HTTP_COOKIE' => '_pk_id.1.1fff=234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.; _ga=GA1.1.1990013592.1524635642; Phpstorm-588f093b=1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda; _identity=8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220FDSsKi-evb-1o1RHPDmKsCsymU148aJ%22%3B%7D; PHPSESSID=c3db4pl0ah08e6b303i7t8uea5'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/peritaje/web/index.php'
+    'REMOTE_PORT' => '35406'
+    'REDIRECT_URL' => '/peritaje/web/peritajes/logo'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/peritaje/web/peritajes/logo'
+    'SCRIPT_NAME' => '/peritaje/web/index.php'
+    'PHP_SELF' => '/peritaje/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527617988.076
+    'REQUEST_TIME' => 1527617988
+]
+2018-05-29 18:27:37 [::1][100][c3db4pl0ah08e6b303i7t8uea5][error][Error] Error: Call to undefined function League\Flysystem\Adapter\file_get_contents() in /home/jhon/Documentos/html/peritaje/controllers/PeritajesController.php:305
+Stack trace:
+#0 [internal function]: app\controllers\PeritajesController->actionLogo()
+#1 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('logo', Array)
+#4 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('peritajes/logo', Array)
+#5 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/jhon/Documentos/html/peritaje/web/index.php(28): yii\base\Application->run()
+#7 {main}
+2018-05-29 18:27:37 [::1][100][c3db4pl0ah08e6b303i7t8uea5][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => 'K0Cvm8vze0gHDqIjztHcu4Cnokl5C3sfn2sTBu1T8mQbBuvIuLgSZWJ4wA7_vu3pyPfmJDJ4OGzmBkY32WuTLg=='
+    'FileUpload' => [
+        'picture' => ''
+    ]
+]
+
+$_FILES = [
+    'FileUpload' => [
+        'name' => [
+            'picture' => 'Captura de pantalla de 2018-05-29 12-32-43.png'
+        ]
+        'type' => [
+            'picture' => 'image/png'
+        ]
+        'tmp_name' => [
+            'picture' => '/tmp/phpz6d0Ki'
+        ]
+        'error' => [
+            'picture' => 0
+        ]
+        'size' => [
+            'picture' => 95431
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_pk_id_1_1fff' => '234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.'
+    '_ga' => 'GA1.1.1990013592.1524635642'
+    'Phpstorm-588f093b' => '1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda'
+    '_identity' => '8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0FDSsKi-evb-1o1RHPDmKsCsymU148aJ\";}'
+    'PHPSESSID' => 'c3db4pl0ah08e6b303i7t8uea5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '95951'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary2om4B4jrTrtmtGB4'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/peritaje/web/peritajes/logo'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9,en;q=0.8,gl;q=0.7,it;q=0.6'
+    'HTTP_COOKIE' => '_pk_id.1.1fff=234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.; _ga=GA1.1.1990013592.1524635642; Phpstorm-588f093b=1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda; _identity=8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220FDSsKi-evb-1o1RHPDmKsCsymU148aJ%22%3B%7D; PHPSESSID=c3db4pl0ah08e6b303i7t8uea5'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/peritaje/web/index.php'
+    'REMOTE_PORT' => '35448'
+    'REDIRECT_URL' => '/peritaje/web/peritajes/logo'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/peritaje/web/peritajes/logo'
+    'SCRIPT_NAME' => '/peritaje/web/index.php'
+    'PHP_SELF' => '/peritaje/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527618457.05
+    'REQUEST_TIME' => 1527618457
+]
+2018-05-29 18:40:48 [::1][100][c3db4pl0ah08e6b303i7t8uea5][error][InvalidArgumentException] InvalidArgumentException: Expiration cannot be in the past. in /home/jhon/Documentos/html/peritaje/vendor/google/cloud-storage/StorageObject.php:726
+Stack trace:
+#0 /home/jhon/Documentos/html/peritaje/controllers/PeritajesController.php(325): Google\Cloud\Storage\StorageObject->signedUrl(0)
+#1 [internal function]: app\controllers\PeritajesController->actionGetLogo()
+#2 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('get-logo', Array)
+#5 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('peritajes/get-l...', Array)
+#6 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/jhon/Documentos/html/peritaje/web/index.php(28): yii\base\Application->run()
+#8 {main}
+2018-05-29 18:40:48 [::1][100][c3db4pl0ah08e6b303i7t8uea5][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_pk_id_1_1fff' => '234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.'
+    '_ga' => 'GA1.1.1990013592.1524635642'
+    'Phpstorm-588f093b' => '1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda'
+    '_identity' => '8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0FDSsKi-evb-1o1RHPDmKsCsymU148aJ\";}'
+    'PHPSESSID' => 'c3db4pl0ah08e6b303i7t8uea5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9,en;q=0.8,gl;q=0.7,it;q=0.6'
+    'HTTP_COOKIE' => '_pk_id.1.1fff=234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.; _ga=GA1.1.1990013592.1524635642; Phpstorm-588f093b=1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda; _identity=8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220FDSsKi-evb-1o1RHPDmKsCsymU148aJ%22%3B%7D; PHPSESSID=c3db4pl0ah08e6b303i7t8uea5'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/peritaje/web/index.php'
+    'REMOTE_PORT' => '35582'
+    'REDIRECT_URL' => '/peritaje/web/peritajes/get-logo'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/peritaje/web/peritajes/get-logo'
+    'SCRIPT_NAME' => '/peritaje/web/index.php'
+    'PHP_SELF' => '/peritaje/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527619248.915
+    'REQUEST_TIME' => 1527619248
+]
+2018-05-29 18:41:04 [::1][100][c3db4pl0ah08e6b303i7t8uea5][error][InvalidArgumentException] InvalidArgumentException: Expiration cannot be in the past. in /home/jhon/Documentos/html/peritaje/vendor/google/cloud-storage/StorageObject.php:726
+Stack trace:
+#0 /home/jhon/Documentos/html/peritaje/controllers/PeritajesController.php(325): Google\Cloud\Storage\StorageObject->signedUrl(86400)
+#1 [internal function]: app\controllers\PeritajesController->actionGetLogo()
+#2 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('get-logo', Array)
+#5 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('peritajes/get-l...', Array)
+#6 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/jhon/Documentos/html/peritaje/web/index.php(28): yii\base\Application->run()
+#8 {main}
+2018-05-29 18:41:04 [::1][100][c3db4pl0ah08e6b303i7t8uea5][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_pk_id_1_1fff' => '234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.'
+    '_ga' => 'GA1.1.1990013592.1524635642'
+    'Phpstorm-588f093b' => '1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda'
+    '_identity' => '8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0FDSsKi-evb-1o1RHPDmKsCsymU148aJ\";}'
+    'PHPSESSID' => 'c3db4pl0ah08e6b303i7t8uea5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9,en;q=0.8,gl;q=0.7,it;q=0.6'
+    'HTTP_COOKIE' => '_pk_id.1.1fff=234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.; _ga=GA1.1.1990013592.1524635642; Phpstorm-588f093b=1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda; _identity=8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220FDSsKi-evb-1o1RHPDmKsCsymU148aJ%22%3B%7D; PHPSESSID=c3db4pl0ah08e6b303i7t8uea5'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/peritaje/web/index.php'
+    'REMOTE_PORT' => '35586'
+    'REDIRECT_URL' => '/peritaje/web/peritajes/get-logo'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/peritaje/web/peritajes/get-logo'
+    'SCRIPT_NAME' => '/peritaje/web/index.php'
+    'PHP_SELF' => '/peritaje/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527619264.124
+    'REQUEST_TIME' => 1527619264
+]
+2018-05-29 18:47:01 [::1][100][c3db4pl0ah08e6b303i7t8uea5][error][yii\base\ErrorException:2] yii\base\ErrorException: imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x89 0x50 in /home/jhon/Documentos/html/peritaje/controllers/PeritajesController.php:219
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'imagecreatefrom...', '/home/jhon/Docu...', 219, Array)
+#1 /home/jhon/Documentos/html/peritaje/controllers/PeritajesController.php(219): imagecreatefromjpeg('https://storage...')
+#2 [internal function]: app\controllers\PeritajesController->actionExportPage()
+#3 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('export-page', Array)
+#6 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('peritajes/expor...', Array)
+#7 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /home/jhon/Documentos/html/peritaje/web/index.php(28): yii\base\Application->run()
+#9 {main}
+2018-05-29 18:46:59 [::1][100][c3db4pl0ah08e6b303i7t8uea5][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_pk_id_1_1fff' => '234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.'
+    '_ga' => 'GA1.1.1990013592.1524635642'
+    'Phpstorm-588f093b' => '1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda'
+    '_identity' => '8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0FDSsKi-evb-1o1RHPDmKsCsymU148aJ\";}'
+    'PHPSESSID' => 'c3db4pl0ah08e6b303i7t8uea5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/peritaje/web/peritajes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9,en;q=0.8,gl;q=0.7,it;q=0.6'
+    'HTTP_COOKIE' => '_pk_id.1.1fff=234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.; _ga=GA1.1.1990013592.1524635642; Phpstorm-588f093b=1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda; _identity=8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220FDSsKi-evb-1o1RHPDmKsCsymU148aJ%22%3B%7D; PHPSESSID=c3db4pl0ah08e6b303i7t8uea5'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/peritaje/web/index.php'
+    'REMOTE_PORT' => '35608'
+    'REDIRECT_URL' => '/peritaje/web/peritajes/export-page'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/peritaje/web/peritajes/export-page'
+    'SCRIPT_NAME' => '/peritaje/web/index.php'
+    'PHP_SELF' => '/peritaje/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527619619.073
+    'REQUEST_TIME' => 1527619619
+]
+2018-05-29 18:48:20 [::1][100][c3db4pl0ah08e6b303i7t8uea5][error][yii\base\ErrorException:2] yii\base\ErrorException: imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x89 0x50 in /home/jhon/Documentos/html/peritaje/controllers/PeritajesController.php:105
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'imagecreatefrom...', '/home/jhon/Docu...', 105, Array)
+#1 /home/jhon/Documentos/html/peritaje/controllers/PeritajesController.php(105): imagecreatefromjpeg('https://storage...')
+#2 [internal function]: app\controllers\PeritajesController->actionGenerateExcel('LBVTKGF')
+#3 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('generate-excel', Array)
+#6 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('peritajes/gener...', Array)
+#7 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /home/jhon/Documentos/html/peritaje/web/index.php(28): yii\base\Application->run()
+#9 {main}
+2018-05-29 18:48:18 [::1][100][c3db4pl0ah08e6b303i7t8uea5][info][application] $_GET = [
+    'id' => 'LBVTKGF'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_pk_id_1_1fff' => '234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.'
+    '_ga' => 'GA1.1.1990013592.1524635642'
+    'Phpstorm-588f093b' => '1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda'
+    '_identity' => '8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0FDSsKi-evb-1o1RHPDmKsCsymU148aJ\";}'
+    'PHPSESSID' => 'c3db4pl0ah08e6b303i7t8uea5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/peritaje/web/peritajes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9,en;q=0.8,gl;q=0.7,it;q=0.6'
+    'HTTP_COOKIE' => '_pk_id.1.1fff=234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.; _ga=GA1.1.1990013592.1524635642; Phpstorm-588f093b=1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda; _identity=8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220FDSsKi-evb-1o1RHPDmKsCsymU148aJ%22%3B%7D; PHPSESSID=c3db4pl0ah08e6b303i7t8uea5'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/peritaje/web/index.php'
+    'REMOTE_PORT' => '35624'
+    'REDIRECT_URL' => '/peritaje/web/peritajes/generate-excel'
+    'REDIRECT_QUERY_STRING' => 'id=LBVTKGF'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=LBVTKGF'
+    'REQUEST_URI' => '/peritaje/web/peritajes/generate-excel?id=LBVTKGF'
+    'SCRIPT_NAME' => '/peritaje/web/index.php'
+    'PHP_SELF' => '/peritaje/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527619698.61
+    'REQUEST_TIME' => 1527619698
+]
+2018-05-29 20:39:47 [::1][100][4ls8gksp88d6h4gejunnjjhcsp][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:dbname=pe...', 'root', 'jhonjtoloza', NULL)
+#1 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#6 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#8 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('rellenado')
+#10 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('rellenado', 'schema', false)
+#11 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('rellenado')
+#12 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#13 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#14 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/BaseActiveRecord.php(121): yii\db\ActiveRecord::findByCondition(Array)
+#15 /home/jhon/Documentos/html/peritaje/controllers/PeritajesController.php(99): yii\db\BaseActiveRecord::findAll(Array)
+#16 [internal function]: app\controllers\PeritajesController->actionGenerateExcel('AUYY9TH')
+#17 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('generate-excel', Array)
+#20 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('peritajes/gener...', Array)
+#21 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /home/jhon/Documentos/html/peritaje/web/index.php(28): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Connection refused in /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#6 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('rellenado')
+#8 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('rellenado', 'schema', false)
+#9 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('rellenado')
+#10 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#11 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#12 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/db/BaseActiveRecord.php(121): yii\db\ActiveRecord::findByCondition(Array)
+#13 /home/jhon/Documentos/html/peritaje/controllers/PeritajesController.php(99): yii\db\BaseActiveRecord::findAll(Array)
+#14 [internal function]: app\controllers\PeritajesController->actionGenerateExcel('AUYY9TH')
+#15 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('generate-excel', Array)
+#18 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('peritajes/gener...', Array)
+#19 /home/jhon/Documentos/html/peritaje/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /home/jhon/Documentos/html/peritaje/web/index.php(28): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2018-05-29 20:39:46 [::1][100][4ls8gksp88d6h4gejunnjjhcsp][info][application] $_GET = [
+    'id' => 'AUYY9TH'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_pk_id_1_1fff' => '234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.'
+    '_ga' => 'GA1.1.1990013592.1524635642'
+    'Phpstorm-588f093b' => '1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda'
+    '_identity' => '8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0FDSsKi-evb-1o1RHPDmKsCsymU148aJ\";}'
+    'PHPSESSID' => '4ls8gksp88d6h4gejunnjjhcsp'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/peritaje/web/peritajes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9,en;q=0.8,gl;q=0.7,it;q=0.6'
+    'HTTP_COOKIE' => '_pk_id.1.1fff=234ba42cf7a34bcb.1524423433.1.1524425381.1524423433.; _ga=GA1.1.1990013592.1524635642; Phpstorm-588f093b=1dbaa0ed-9be5-4ad8-9ef9-af32ed0cdbda; _identity=8e34b50133d5e9d706203b6dda8d8089c650af31604e3fdb44d6168ef0ee4ec5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=f7519730ab5aeb041997dbfa437f331c8987bf224969de3361d13c3eb905ce20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220FDSsKi-evb-1o1RHPDmKsCsymU148aJ%22%3B%7D; PHPSESSID=4ls8gksp88d6h4gejunnjjhcsp'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/peritaje/web/index.php'
+    'REMOTE_PORT' => '37236'
+    'REDIRECT_URL' => '/peritaje/web/peritajes/generate-excel'
+    'REDIRECT_QUERY_STRING' => 'id=AUYY9TH'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=AUYY9TH'
+    'REQUEST_URI' => '/peritaje/web/peritajes/generate-excel?id=AUYY9TH'
+    'SCRIPT_NAME' => '/peritaje/web/index.php'
+    'PHP_SELF' => '/peritaje/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527626386.069
+    'REQUEST_TIME' => 1527626386
+]
